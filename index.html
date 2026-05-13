@@ -333,7 +333,7 @@ Gera exactamente 5 looks diferentes. Cada look tem 3 a 4 items. Usa lojas portug
     const headers = { 'Content-Type': 'application/json' };
     if (apiKey) headers['x-api-key'] = apiKey;
 
-    const res = await fetch('https://api.anthropic.com/v1/messages', {
+    const res = await fetch('/api/chat', {
       method: 'POST', headers,
       body: JSON.stringify({
         model: 'claude-sonnet-4-20250514',
@@ -406,3 +406,4 @@ function renderLooks(r) {
 </script>
 </body>
 </html>
+$env:ANTHROPIC_API_KEY=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
