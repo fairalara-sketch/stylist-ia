@@ -102,7 +102,7 @@
     .dica strong { color: var(--text); display: block; margin-bottom: 2px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; }
 
     /* API */
-    .api-section { margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--border); }
+    . { margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--border); }
     .api-label { font-size: 12px; color: var(--text-muted); margin-bottom: 6px; display: block; text-transform: uppercase; letter-spacing: 0.06em; }
     .api-tip { font-size: 11px; color: var(--text-muted); margin-top: 5px; }
     .api-tip i { font-size: 11px; vertical-align: -1px; }
@@ -111,7 +111,7 @@
     footer { text-align: center; padding: 2rem; font-size: 12px; color: var(--text-muted); border-top: 1px solid var(--border); margin-top: 2rem; }
 
     @media (max-width: 480px) {
-      .form-grid { grid-template-columns: 1fr; }
+      .form-grid { grapi-sectionid-template-columns: 1fr; }
       .gender-row { grid-template-columns: 1fr 1fr; }
     }
   </style>
@@ -298,7 +298,7 @@ async function analyze() {
   const body = document.getElementById('bodySelect').value;
   const style = document.getElementById('styleSelect').value;
   const budget = document.getElementById('budgetSelect').value;
-  const apiKey = document.getElementById('apiKeyInput').value.trim();
+  const apiKey = '';
   const colorPref = selectedColor === 'none' ? 'sem preferência de cor' : 'cor preferida: ' + selectedColor;
   const genLabel = gender === 'F' ? 'mulher' : 'homem';
 
