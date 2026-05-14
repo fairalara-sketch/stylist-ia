@@ -349,9 +349,7 @@ Gera exactamente 5 looks diferentes. Cada look tem 3 a 4 items. Usa lojas portug
     renderLooks(result);
   } catch (err) {
     const msg = document.getElementById('errorMsg');
-    msg.textContent = !apiKey
-      ? '⚠️ Insere a tua chave API Anthropic no campo abaixo para usar esta funcionalidade.'
-      : 'Erro: ' + err.message;
+    msg.textContent = 'Erro: ' + err.message;
     msg.style.display = 'block';
   } finally {
     document.getElementById('loading').style.display = 'none';
